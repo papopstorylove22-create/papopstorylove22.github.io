@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ประวัติผู้จัดทำ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+      z-index: 0;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .card {
+      max-width: 1000px;
+      background: rgba(202, 216, 219, 0.9);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      border: 4px solid #378bbb;
+      position: relative;
+    }
+
+    .card-img {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #8eb8e0;
+      min-height: 200px;
+    }
+
+    .card-img img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card-content {
+      flex: 2;
+      padding: 40px 60px 40px 60px;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #ffffff;
+      font-size: 4em;
+      background-color: #3f91c0;
+      padding: 10px 20px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-left: 80px;
+    }
+
+    .info {
+      font-size: 1.25em;
+      color: #555;
+      line-height: 2;
+    }
+
+    .info strong {
+      color: #2980b9;
+    }
+
+    .social {
+      margin-top: 20px;
+    }
+
+    .social a {
+      display: inline-block;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+
+    .social img {
+      vertical-align: middle;
+      height: 32px;
+      margin-right: 8px;
+    }
+
+    .back-link {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #2980b9;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    .back-link:hover {
+      background-color: #1f6394;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        height: auto;
+        padding: 20px;
+      }
+      .card {
+        flex-direction: column;
+      }
+      .card-img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="pic/profile1.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="card">
+    <div class="card-img">
+      <img src="pic/profile.jpg" alt="ภาพโปรไฟล์ของอานนท์ โชติชื่น">
+    </div>
+    <div class="card-content">
+      <h1>ประวัติผู้จัดทำ</h1>
+      <div class="info">
+        <p><strong>ชื่อ:</strong> อานนท์  โชติชื่น</p>
+        <p><strong>วันเกิด:</strong> 26 พฤษภาคม 2538</p>
+        <p><strong>ที่อยู่:</strong> 45 หมู่.6 ตำบล.บางไผ่ อำเภอ.เมืองฉะเชิงทรา จังหวัด.ฉะเชิงเทรา 24000</p>
+        <p><strong>การศึกษา:</strong> ปวส.1 สาขาเทคโนโลยีสารสนเทศ</p>
+        <p><strong>ความสามารถพิเศษ:</strong> เล่นเกมส์ และ การเขียนโปรแกรม HTML</p>
+        <p><strong>อีเมล:</strong> papopstorylove22@gmail.com</p>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/PopChiKlet" target="_blank">
+          <img src="pic/facebook_logo.png" alt="Facebook">Facebook
+        </a>
+        <a href="https://line.me/ti/p/tOMdEIKVhR" target="_blank">
+          <img src="pic/line_logo.png" alt="LINE">LINE
+        </a>
+        <a href="https://s.team/p/gcjq-whkq/VQRPTGVV" target="_blank">
+          <img src="pic/Steam_icon_logo.png" alt="Steam">Steam
+        </a>
+      </div>
+    </div>
+    <a href="index.html" class="back-link">ย้อนกลับ</a>
+  </div>
+</body>
+</html>
